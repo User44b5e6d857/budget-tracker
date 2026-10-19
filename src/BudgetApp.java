@@ -38,6 +38,12 @@ public class BudgetApp {
     
         int diff = budgetDifference(list);
         System.out.println("Budget Difference: $" + diff);
+
+        if(list.size() > 0)
+        {
+            double average = diff / list.size();
+            System.out.println("Average difference for each category: $" + String.format("%.2f", average));
+        }
     }
 
     /**
