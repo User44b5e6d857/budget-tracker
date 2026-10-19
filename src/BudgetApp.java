@@ -5,6 +5,12 @@ public class BudgetApp {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
+        BudgetCategory groceries = new BudgetCategory("Groceries", 500, 401);
+        System.out.println(groceries);
+        System.out.println(groceries.getCategory());
+        System.out.println(groceries.getLimit());
+        System.out.println(groceries.getSpent());
+
         while(scan.hasNextLine()) {
             String category = scan.nextLine();
 

@@ -10,24 +10,25 @@ public class BudgetCategory {
         this.spent = spent;
     }
 
-    public getCategory()
+    public String getCategory()
     {
         return category;
     }
 
-    public getLimit()
+    public double getLimit()
     {
         return limit;
     }
 
-    public getSpent()
+    public double getSpent()
     {
         return spent;
     }
 
     public String toString()
     {
-        
+        return "Category: " + category + "    Limit: $" + String.format("%.2f", limit)
+        + "    Spent: $" + String.format("%.2f", spent);
     }
     
 }
